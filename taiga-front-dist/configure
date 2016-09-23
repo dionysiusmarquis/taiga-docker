@@ -37,7 +37,8 @@ cat > /usr/local/taiga/taiga-front-dist/dist/conf.json <<EOL
     "privacyPolicyUrl": null,
     "termsOfServiceUrl": null,
     "maxUploadFileSize": null,
-    "contribPlugins": []
+    "contribPlugins": [],
+    "loginFormType": "${TAIGAFRONT_LOGIN_FORM_TYPE}"
 }
 
 
