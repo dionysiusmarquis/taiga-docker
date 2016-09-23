@@ -19,7 +19,8 @@ RUN \
   git checkout stable && \
   pip install -r requirements.txt && \
   touch /usr/local/taiga/taiga-back/settings/dockerenv.py && \
-  touch /usr/local/taiga/circus.ini
+  touch /usr/local/taiga/circus.ini && \
+  pip install taiga-contrib-ldap-auth 
 
 # Add Taiga Configuration
 ADD ./local.py /usr/local/taiga/taiga-back/settings/local.py
